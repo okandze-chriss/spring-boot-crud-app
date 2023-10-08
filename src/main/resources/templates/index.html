@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" />
+    <link th:href="@{/css/app.css}" href="../static/css/app.css" rel="stylesheet" media="all" type="text/css">
+    <title>Advanced User Management</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg bd-navbar sticky-top bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="">
+            AUM
+        </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="navbar-brand" th:href="@{/users}">Manage Users</a>
+                </li>
+            </ul>
+        </div>
+
+        <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+<!--    <div class="">-->
+<!--        <img src="../static/images/bg.jpeg" th:src="@{/images/bg.jpeg}"  class="img-fluid sm-height" alt="">-->
+<!--    </div>-->
+
+<script type="text/javascript" th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+</body>
+</html>
